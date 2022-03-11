@@ -1,8 +1,11 @@
 import Users from './Users';
+import { UsersProvider } from './UsersContext';
 
 function App() {
   return (
-    <Users></Users>
+    <UsersProvider>
+      <Users></Users>
+    </UsersProvider>
   );
 }
 
